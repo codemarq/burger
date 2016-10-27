@@ -39,7 +39,7 @@ router.post('/burgers/insert', function (req, res) {
 });
 
 // route to handle updating a burger (devouring it)
-router.put('/cats/update/:id', function (req, res) {
+router.put('/burgers/update/:id', function (req, res) {
 	var condition = 'id = ' + req.params.id;
 
 	console.log('condition', condition);
@@ -51,7 +51,6 @@ router.put('/cats/update/:id', function (req, res) {
 		res.redirect('/burgers');
 	});
 });
-
 
 // export router
 module.exports = router;
