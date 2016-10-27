@@ -39,7 +39,7 @@ var orm = {
 	// select All function
 	selectAll: function (table, cb) {
 		// build mysql query string
-		var query = 'SELECT * FROM ' + table + ';';
+		var queryString = 'SELECT * FROM ' + table + ';';
 
 		// send mysql query command to db and return result
 		connection.query(queryString, function (err, result) {
