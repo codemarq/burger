@@ -26,7 +26,7 @@ router.get('/burgers', function (req, res) {
 			burgers: data
 		};
 
-		console.log(hbsObject);
+		// console.log(hbsObject);
 		res.render('index', hbsObject);
 	});
 });
@@ -42,7 +42,7 @@ router.post('/burgers/insert', function (req, res) {
 router.put('/burgers/update/:id', function (req, res) {
 	var condition = 'id = ' + req.params.id;
 
-	console.log('condition', condition);
+	// console.log('condition', condition);
 
 	burger.updateOne({devoured: true}, condition, function () {
 		res.redirect('/burgers');
