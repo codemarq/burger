@@ -57,10 +57,11 @@ var orm = {
 		queryString += ' (';
 		queryString += columns.toString();
 		queryString += ') ';
-		queryString +='VALUES (';
-		queryString += printQuestionMarks(values.length);
-		queryString += ') ';
-
+		queryString +='VALUES ';
+		queryString += '("';
+		queryString += values;
+		queryString += '");';
+		
 		// send insert query command to mysql db
 		connection.query(queryString, function (err, result) {
 			// error handling
@@ -79,7 +80,7 @@ var orm = {
 		queryString += objToSql(objColVals);
 		queryString += ' WHERE ';
 		queryString += condition;
-
+		console.log(queryString);
 
 		// send update query command to mysql db
 		connection.query(queryString, function (err, result) {

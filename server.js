@@ -17,7 +17,7 @@ var app = express();
 var PORT = 3000;
 
 // Serve static content for the app from the "public" directory in the application directory.
-app.use(express.static(process.cwd() + '/public'));
+app.use(express.static(process.cwd() || __dirname + '/public'));
 
 app.use(bodyParser.urlencoded({
 	extended: false
@@ -40,6 +40,6 @@ app.use('/', routes);
 
 // Starts the server to begin listening
 // ===========================================================================
-app.listen(PORT, function () {
+app.listen(process.env.PORT || PORT, function () {
 	console.log('App listening on PORT ' + PORT);
 });
