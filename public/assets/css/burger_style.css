@@ -24,6 +24,7 @@ ul {
 
 li {
   background: #FAEBD7;
+  border-radius: 25px;
   margin: 5px;
   padding: 5px;
 }
@@ -47,6 +48,7 @@ li {
 img {
 	max-height: 200px;
 	max-width: 200px;
+  margin-bottom: 20px;
 }
 
 #devoured {

@@ -1,4 +1,4 @@
-{{!-- <div class="container"> --}}
+<div class="container"> --}}
   <header>
     <h1>Eat Dat Burgah!!</h1>
   </header>
@@ -22,8 +22,9 @@
 
     {{!-- center column --}}
     <div class="col-sm-12 col-md-4 well" id="center_column">
-      <img src="public/assets/img/burger.png">
       <h2>Add a Burger</h2>
+      <img src="public/assets/img/burger.png">
+      {{!-- form --}}
       <form class="create-update-form" action="burgers/insert" method="POST">
         <div class="form-group">
           <label for="burger">Burger Name:</label>
@@ -47,4 +48,4 @@
       {{/each}}
     </div>
   </section>
-{{!-- </div> --}}
+</div>
