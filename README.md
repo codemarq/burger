@@ -1,3 +1,5 @@
+[![NSP Status](https://nodesecurity.io/orgs/codemarq/projects/b0b236e9-962a-4f25-8be1-4c22f3d55c71/badge)](https://nodesecurity.io/orgs/codemarq/projects/b0b236e9-962a-4f25-8be1-4c22f3d55c71)
+
 # Eat the Burger App
 
 Eat the Burger is a full-stack web app. This is a burger eating game using node, express, mysql, handlebars, html and css. User can enter any text to create a new burger.  The burger is stored to a sql database on the backend.  The list of burgers on the right is populated by the sql database, along with a "devour it" button.  Clicking the "devour it" button changes the devoured value of the burger in MySQL to "true", which then moves that burger over to the "devoured" column on the right.  The HTML is generated using the Handlebars templating engine in Node.js.  This is an exercise in persistent data and also an exercise in using O.R.M. and setting up a full-stack project using the MVC method. 
